@@ -46,7 +46,8 @@ class load():
         
         labels = []
         for name in self.image_names():
-            for c in categories:     
+            for c in categories:
+#                 if not any(ct in name for ct in categories):     
                 if c.lower() in name.lower():
                     labels.append(c)
         return np.array(labels)
