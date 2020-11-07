@@ -8,3 +8,5 @@ After making sure that you have installed all the requirement in Requirement.txt
 2. The file Model.py contains the model CNN.
 3. The file Main.py runs the model. 
 4. The file tensorboard.ipynb is a tensorboard summary of the model.
+# Requirements:
+    ``requirements.txt``
