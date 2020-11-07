@@ -9,4 +9,4 @@ After making sure that you have installed all the requirement in Requirement.txt
 3. The file Main.py runs the model. 
 4. The file tensorboard.ipynb is a tensorboard summary of the model.
 # Requirements:
-    ``requirements.txt``
+The requirements are listed in ``requirements.txt``.
