@@ -2,14 +2,11 @@ import torch
 from torch.autograd import Variable
 from torch import nn
 from torch.nn import functional as F
-
 import dlc_practical_prologue as prologue
-
 
 # Loading the MNIST dataset with dlc_practical_prolongue
 train_input, train_target, test_input, test_target = \
     prologue.load_data(one_hot_labels = True, normalize = True, flatten = False)
-
 
 # Convlolutional neural network model
 class Net(nn.Module):
@@ -46,13 +43,9 @@ def train_model(model, train_input, train_target, mini_batch_size =  100, num_it
             for p in model.parameters():
                 p.data.sub_(eta * p.grad.data)
         print(e, sum_loss)
-
-        
-
         
 model = Net()
 train_model(model,train_input, train_target, mini_batch_size =  100)
-
 
 # Computing the errors
 def compute_nb_error(model, input_, target, mini_batch_size = 100):
