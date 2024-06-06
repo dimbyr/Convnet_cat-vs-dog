@@ -39,7 +39,7 @@ six==1.13.0
 tensorboard==2.0.0
 torch==1.13.1
 torchvision==0.4.2
-tornado==6.0.3
+tornado==6.4.1
 traitlets==4.3.3
 wcwidth==0.1.7
 Werkzeug==3.0.1
